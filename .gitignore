@@ -1,0 +1,13 @@
+.vs
+.idea
+obj
+bin
+packages
+.user
+.suo
+.env
+.DS_Store
+node_modules
+lib/*
+*.user
+
