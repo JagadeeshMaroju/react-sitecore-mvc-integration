@@ -25,7 +25,7 @@ cd react-sitecore-mvc-integration
 
 ### 2. Setup the React App
 ```sh
-cd src\Project\Integration\code\sitecore-react-app
+cd src\Project\Integration\code\sitecore-react-app\
 npm install
 npm run build
 ```
