@@ -49,7 +49,7 @@ namespace YourNamespace.Controllers
             var model = new
             {
                 title = dataSource.Fields["Title"].Value,
-                resultsPerPage = dataSource.Fields["ResultsPerPage"].Value,
+                resultsPerPage = dataSource.Fields["Description"].Value,
             };
             return View("~/Views/React/RenderReactApp.cshtml", model);
         }
@@ -108,21 +108,20 @@ export const renderReactComponent = (rootElement: HTMLElement, props: any) => {
 window.ReactApp = { renderReactComponent };
 ```
 
-### 7. Implement a Simple React Component (HelloWorld.tsx)
+### 7. Implement a Simple React Component (Greeting.tsx)
 ```tsx
 import React from "react";
 
 type Props = {
   title: string;
-  resultsPerPage: string;
+  description: string;
 };
 
-const Greeting: React.FC<Props> = ({ title, resultsPerPage }) => {
+const Greeting: React.FC<Props> = ({ title, description }) => {
   return (
     <div>
       <h1>{title}</h1>
-      <p>Showing {resultsPerPage} results per page.</p>
-      <p>Hello from React inside Sitecore MVC!</p>
+      <p>{description}</p>
     </div>
   );
 };

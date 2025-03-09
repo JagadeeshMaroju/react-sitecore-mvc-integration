@@ -16,7 +16,7 @@ namespace SitecoreMvc.Project.Integration.Controllers
             var model = new
             {
                 title = dataSource.Fields["Title"].Value,
-                resultsPerPage = dataSource.Fields["ResultsPerPage"].Value,
+                description = dataSource.Fields["Description"].Value,
             };
             return View("~/Views/React/RenderReactApp.cshtml", model);
         }
