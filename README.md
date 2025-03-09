@@ -135,6 +135,3 @@ Ensure your Sitecore instance is running and browse the page where the rendering
 ---
 
 
-## License
-MIT License.
-
