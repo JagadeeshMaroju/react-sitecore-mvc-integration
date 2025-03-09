@@ -25,14 +25,14 @@ cd react-sitecore-mvc-integration
 
 ### 2. Setup the React App
 ```sh
-cd sitecore-react-app
+cd src\Project\Integration\code\sitecore-react-app
 npm install
 npm run build
 ```
 This will generate the production build files in the `/build` directory.
 
 ### 3. Add React App to Sitecore MVC
-Copy the React build directory into your Sitecore MVC project under `intetpub/wwwroot/`.
+Copy the React build directory into your site `intetpub/wwwroot/`(add the react build and copy steps in devops pipeline).
 
 ### 4. Implement Sitecore MVC Controller
 ```csharp
