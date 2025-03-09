@@ -49,7 +49,7 @@ namespace YourNamespace.Controllers
             var model = new
             {
                 title = dataSource.Fields["Title"].Value,
-                resultsPerPage = dataSource.Fields["Description"].Value,
+                description = dataSource.Fields["Description"].Value,
             };
             return View("~/Views/React/RenderReactApp.cshtml", model);
         }
@@ -73,8 +73,8 @@ namespace YourNamespace.Controllers
     var cssFile = files.ContainsKey("main.css") ? files["main.css"] : "dist/main.css";
 }
 
-<link rel="stylesheet" href="@Url.Content("~" + cssFile)">
-<script src="@Url.Content("~" + jsFile)"></script>
+<link rel="stylesheet" href="@Url.Content("~/static" + cssFile)">
+<script src="@Url.Content("~/static" + jsFile)"></script>
 
 
 @model dynamic
