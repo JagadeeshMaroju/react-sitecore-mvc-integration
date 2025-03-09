@@ -17,9 +17,7 @@
 <script src="@Url.Content("~" + jsFile)"></script>
 
 
-<script src="~/react/main.js"></script>
 @model dynamic
-<script src="~/sitecore-react-app/build/asset-manifest.json"></script>
 <div id="react-root"></div>
 <script>
   window.ReactModel = @Html.Raw(Json.Encode(Model));
